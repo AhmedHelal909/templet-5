@@ -1,0 +1,338 @@
+@font-face{
+    font-family: myfont;
+    src:url('../Abel-Regular.ttf');
+}
+@font-face{
+	font-family: myfont2;
+	src:url('../BlackOpsOne-Regular.ttf');
+}
+
+
+body{
+	font-family: "myfont";
+}
+
+.navbar{
+	background-color: #222;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+
+}
+
+.home .container:before{
+	content: "";
+	display: table;
+}
+.navbar-nav a{
+	color: #fff !important;
+    font-size: 18px;
+    text-decoration: none;
+}
+:root{
+	--mainColor:yellow;
+}
+.navbar-nav a:hover{
+color:var(--mainColor) !important;
+}
+.nav-item.active .nav-link{color:var(--mainColor) !important;}
+
+/*Start Home*/
+.home{
+	background-image: url('../images/bg.jpg');
+	background-size: cover;
+	-webkit-background-size: cover;
+	-ms-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+.home .banner{
+	padding-top: 200px;
+    text-align: left;
+    color: #fff;
+
+}
+.home .banner h1{
+	font-family: 'myfont2';
+	font-size: 60px;
+}
+.home .banner h2{
+	font-size: 32px;
+}
+/*Welcome*/
+.welcome .info{
+	    padding: 120px 0 40px;
+}
+
+.welcome .info .title h2{
+	font-weight: 800;
+	font-family: 'myfont'
+}
+.welcome .info .title h2>span{
+	color: red
+}
+.welcome .item .shadow{
+	position: relative;
+}
+.welcome .item .shadow:before,
+.welcome .item .shadow:after{
+	z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 14px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: #fff;
+    box-shadow: 0 15px 10px #000;
+    transform: rotate(-3deg);
+-webkit-transform: rotate(-3deg);
+ -moz-transform: rotate(-3deg);
+ -o-transform: rotate(-3deg);
+-ms-transform: rotate(-3deg);
+}
+
+
+.welcome .item .shadow:after{
+	transform: rotate(3deg);
+	-webkit-transform :rotate(3deg);
+ -moz-transform :rotate(3deg);
+-o-transform :rotate(3deg);
+-ms-transform :rotate(3deg);
+transform :rotate(3deg);
+    right: 10px;
+    left: auto;
+
+}
+.welcome .item h4
+{
+	    padding: 0px 23px
+}
+/*req*/
+.req{
+	background-image: url('../images/require.jpg');
+	background-size: cover;
+	-webkit-background-size: cover;
+	-ms-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+.req h2{
+	color: #cfd5f7
+}
+.req h2 >span{
+	color: var(--mainColor) !important;
+}
+.req i{
+	display: inline-block;
+    width: 64px;
+    height: 64px;
+    background: url(../images/icons.png) no-repeat 0px 0px;
+    padding-bottom: 75px;
+    text-decoration: none;
+}
+.req .req-back{
+	background-color: rgba(0,0,0,0.5);
+	min-height: 475px
+}
+.req .req-back p{
+	color: #fff;
+    padding: 0px 25px;
+    text-align: left;
+    font-size: 20px;
+}
+.req .req-back p>span{
+	font-size: 16px;
+    color: rgba(239, 239, 243, 0.83);
+}
+.req .xbox{
+	background-position: -63px;
+}
+.req .ps2{
+	background-position: -128px;
+}
+.req .req-back h3{
+	text-align: left;
+    padding: 0px 25px;
+    color: #fff;
+    font-weight: bold;
+}
+/*up-come*/
+.up-come
+{
+	padding: 15px;
+	background-color:#212020;
+}
+.up-come .you{
+
+}
+.up-come .you iframe{
+
+}
+@media (max-width: 1199px){
+	.up-come .you iframe{
+		width: 450px !important;
+		height: 305px !important;
+	}
+}
+.up-come .grid{
+	display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 20% 60%;
+}
+.up-come h4{
+	font-size: 20px;
+    color: #5bb2fc;
+    line-height: 28px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    cursor: pointer;
+}
+.up-come p{
+	font-size: 14px;
+    line-height: 20px;
+    color: #888;
+    margin-top: 8px
+}
+.up-come .grid img{
+	width: 100%;
+	max-width: 100%;
+	height: auto
+}
+.up-come .grid .grid1{
+	width: 100%;
+}
+/*team*/
+.team{
+	background-color: #D6D3D3;
+}
+
+.team a{
+	border: 7px solid #dddbdb;
+	border-radius: 25px;
+	display: block;
+	overflow: hidden;
+}
+.team a img{
+transform: scale(1.1);
+-webkit-transform:scale(1.1);
+
+
+
+ -moz-transform:scale(1.1);
+-o-transform:scale(1.1);
+-ms-transform:scale(1.1);
+transition: transform 0.5s;
+-webkit-transition: transform 0.5s;
+ -moz-transition: transform 0.5s;
+ -o-transition: transform 0.5s;
+-ms-transition: transform 0.5s;
+
+}
+.team a img:hover{
+transform: scale(1);
+-webkit-transform:scale(1);
+
+
+
+ -moz-transform:scale(1);
+-o-transform:scale(1);
+-ms-transform:scale(1);
+}
+/*footer*/
+.footer,.copy{
+	background-color: #1d1d1c;
+	color: #fff;
+}
+.footer h2{
+	font-family: 'myfont2';
+	font-size: 24px;
+    padding-bottom: 20px;
+    color: #5bb2fc;
+    letter-spacing: 3px
+}
+.footer .info ul li{
+	display: inline-block;
+}
+.footer .um ul li:last-of-type{
+	color: var(--mainColor);
+}
+.footer .info ul li a{
+	display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/img-sprite.png) no-repeat 0px 0px;
+}
+.footer .info ul li a{
+	transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+-webkit-transition: all 0.5s ease-in-out;
+ -moz-transition: all 0.5s ease-in-out;
+ -o-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+}
+.footer .info ul li .facebook:hover{
+	background-position: 0px -50px;
+}
+.footer .info ul li .twitter
+{
+	background-position: -50px 0px;
+}
+.footer .info ul li .twitter:hover{
+	background-position: -50px -50px;
+}
+.footer .info ul li .instagram
+{
+background-position: -150px 0px;
+}
+.footer .info ul li .instagram:hover{
+	background-position: -150px -50px;
+}
+.footer .info ul li .google-plus{
+	background-position: -100px 0px;
+}
+.footer .info ul li .google-plus:hover{
+	background-position: -100px -50px;
+}
+.footer .info ul li .youtube{
+	background-position: -200px 0px;
+}
+.footer .info ul li .youtube:hover{
+	background-position: -200px -50px;
+}
+form input[type="email"]{
+	outline: none;
+    font-size: 16px;
+    color: #fff;
+    font-family: "Abel-Regular";
+    padding: 15px 10px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    width: 67%;
+    background: #1d1d1c;
+}
+form input[type="submit"]{
+	    background: rgba(2, 2, 2, 0.60);
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 18px;
+    font-family: "Abel-Regular";
+    padding: 15px 10px 15px 15px;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    margin-top: 24px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+form input[type="submit"]:hover
+{
+color: #000;
+    background: #d8cc52;
+    font-weight: 600;
+}
