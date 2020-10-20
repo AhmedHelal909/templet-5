@@ -13,6 +13,7 @@ var navH =$('.navbar').innerHeight();
 
 
     $('.home').css('height',winH -navH);
+	    $('.home').css('width',winW);
 
 
 
