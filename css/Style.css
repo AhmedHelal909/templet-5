@@ -45,6 +45,7 @@ color:var(--mainColor) !important;
 	-ms-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
+	width:100% !important;
 }
 .home .banner{
 	padding-top: 200px;
