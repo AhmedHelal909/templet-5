@@ -172,7 +172,7 @@ width: 100% !important;
 }
 @media (max-width: 1199px){
 	.up-come .you iframe{
-		
+		width: 450px;
 		height: 305px !important;
 	}
 }
